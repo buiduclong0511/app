@@ -1,0 +1,9 @@
+<div class="user">
+    <img [src]="userInfo.avatar" alt="userInfo.nickname">
+    <div class="info">
+        <h1 class="nickname">{{ userInfo.nickname }}</h1>
+        <h3 class="fullname">{{ userInfo.first_name + " " + userInfo.last_name }}</h3>
+        <p class="bio">{{ userInfo.bio }}</p>
+    </div>
+</div>
+<button class="logout" (click)="logout()">Logout</button>
